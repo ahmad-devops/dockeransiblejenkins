@@ -9,3 +9,9 @@ Fix --
 2. since I was running on same host jenkins .ssh/id_ras.pub key should be added to jenkins.ssh/authorized_keys
 
 #issue 2
+
+TASK [Gathering Facts] *********************************************************
+fatal: [127.0.0.1]: FAILED! => {"msg": "Missing sudo password"}
+
+add below in visudo as we are running locally
+jenkins     ALL=(ALL) NOPASSWD:ALL
