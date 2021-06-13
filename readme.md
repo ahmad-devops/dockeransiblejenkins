@@ -15,3 +15,9 @@ fatal: [127.0.0.1]: FAILED! => {"msg": "Missing sudo password"}
 
 add below in visudo as we are running locally
 jenkins     ALL=(ALL) NOPASSWD:ALL
+
+#issue3
+
+fatal: [127.0.0.1]: FAILED! => {"changed": false, "msg": "An unexpected requests error occurred when docker-py tried to talk to the docker daemon: 500 Server Error: Internal Server Error (\"b'{\"message\":\"Cannot locate specified Dockerfile: Dockerfile\"}'\")"}
+
+
