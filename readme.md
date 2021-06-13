@@ -25,3 +25,6 @@ Fix - The issue is jenkins is not able to read the . path .
 hence I have updated the playbook to use WORKSPACE directory as the path for Dockerfile.
 
 Check jenkinsfile for more.
+
+#Accessible link
+http://localhost:8090/dockeransible/
