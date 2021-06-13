@@ -18,4 +18,5 @@
           path: "{{ PATH }}"
           dockerfile: Dockerfile
         source: build
+        tag: "{{ DOCKER_TAG }}"
         state: present
