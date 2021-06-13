@@ -15,6 +15,7 @@
       docker_image:
         name: dockeransible
         build:
-          path: .
+          path: "{{ PATH }}"
+          dockerfile: Dockerfile
         source: build
         state: present
