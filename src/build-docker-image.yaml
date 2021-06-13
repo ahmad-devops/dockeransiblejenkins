@@ -1,0 +1,19 @@
+---
+
+- hosts: localservers
+  tasks:
+    - name: Install pip
+      apt:
+        name: python-pip
+        state: present
+    - name: Pip install docker-py
+      pip:
+        name: docker-py
+        state: present
+    - name: Build docker image
+      docker_image:
+        name: dockeransible
+        build:
+          path: ./
+        source: build
+        state: present
