@@ -19,3 +19,5 @@
           dockerfile: Dockerfile
         source: build
         state: present
+        repository: ahmadlearning/dockeransible
+        push: yes
